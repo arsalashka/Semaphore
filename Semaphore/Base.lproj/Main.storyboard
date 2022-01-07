@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,52 +13,52 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Semaphore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RNf-BL-WlE">
+                                <rect key="frame" x="120" y="20" width="80" height="262.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOi-uq-vIn">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="74"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QN8-Ih-gTT">
+                                        <rect key="frame" x="0.0" y="94" width="80" height="74.5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xac-Uf-z0b">
+                                        <rect key="frame" x="0.0" y="188.5" width="80" height="74"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yo9-uW-elo">
-                                <rect key="frame" x="135" y="593" width="105" height="46"/>
+                                <rect key="frame" x="108.5" y="407" width="103" height="38"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Yo9-uW-elo" secondAttribute="height" multiplier="141:62" id="Dgg-3y-hwl"/>
+                                    <constraint firstAttribute="width" secondItem="Yo9-uW-elo" secondAttribute="height" multiplier="103:38" id="eSZ-Ye-seb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START">
-                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="actionButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDy-dq-Lqe"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RNf-BL-WlE">
-                                <rect key="frame" x="131.5" y="20" width="112" height="365"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOi-uq-vIn">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="108.5"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QN8-Ih-gTT">
-                                        <rect key="frame" x="0.0" y="128.5" width="112" height="108"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xac-Uf-z0b">
-                                        <rect key="frame" x="0.0" y="256.5" width="112" height="108.5"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RNf-BL-WlE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4HM-EK-6Fp"/>
                             <constraint firstItem="RNf-BL-WlE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.546875" id="8fb-en-OkP"/>
-                            <constraint firstItem="Yo9-uW-elo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ITR-yc-eN1"/>
-                            <constraint firstItem="Yo9-uW-elo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0691964" id="Qpq-TV-j4D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yo9-uW-elo" secondAttribute="bottom" constant="35" id="D84-3K-O3S"/>
+                            <constraint firstItem="Yo9-uW-elo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mlo-8O-J4c"/>
+                            <constraint firstItem="Yo9-uW-elo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0791667" id="aIm-c0-wWK"/>
                             <constraint firstItem="RNf-BL-WlE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="dBa-Vf-ckZ"/>
                             <constraint firstItem="RNf-BL-WlE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eAd-6a-vWK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yo9-uW-elo" secondAttribute="bottom" constant="28" id="uwa-UY-Y6d"/>
                         </constraints>
                     </view>
                     <connections>
@@ -70,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.644859813084111" y="96.54427645788337"/>
+            <point key="canvasLocation" x="31.875" y="96.25"/>
         </scene>
     </scenes>
     <resources>
@@ -79,9 +79,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
